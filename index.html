@@ -1,0 +1,79 @@
+
+<html>
+  <head>
+    <title>The Item Identifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Pangolin&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body style="background-color: darkgreen;">
+    <center>
+      <div class="col-xs-12 header div" style="background-color: lightgreen;">
+        <h2 style="font-family: 'Bangers', cursive; font-weight: lighter; color: chocolate;">
+        <img src="facebook_cover_photo_2.png" style="width: 350px; height: 100px;">
+        </h2>
+      </div>
+
+      <div class="col-sm-6 col-xs-12 main_div" style="background-color: greenyellow;">
+      <label style="font-family: 'Bebas Neue', cursive; font-size: large;">Your Webcam -</label>
+      <div id="camera"  style="border: 2px solid green; width: 310px; height: 300px; box-shadow: 5px 5px 18 px lightgreen"></div>
+      <br>
+      <button onclick="take_snapshot();" class="btn btn-danger" style="font-family: 'Pangolin', cursive;">Capture Image</button>
+      <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+
+      <div class="col-sm-6 col-xs-12 main_div" style="background-color: greenyellow;">
+        <label style="font-family: 'Bebas Neue', cursive; font-size: large;">Snapshot -</label>
+        <div id="result"style="border: 2px solid green; width: 310px; height: 300px; box-shadow: 5px 5px 18 px lightgreen"></div>
+        <br>
+        <button onclick="check();" class="btn btn-danger" style="font-family: 'Pangolin', cursive;">Identify Image</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        </div>
+        
+        <div class="col-xs-12 footer_div" style="background-color: limegreen; align-self: center; padding: 5px;">
+        <h4 class="col-sm-6 col-xs-12" style="font-family: 'Bebas Neue', cursive; font-size: large;">
+          <span class="glyphicon glyphicon-search"></span>
+          <br>
+          <br>
+           Result: <span id="object_name"></span>
+        </h4>
+        <br>
+        </div>
+        <div class="copy_right_footer" style="font-family: 'Pangolin', cursive; align-self: center; position: fixed; width: 110%; background-color: greenyellow; bottom: 0;">Made By Matsya Vedh</div>
+
+     </center>
+
+
+    
+<script src="main.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+ 
+
